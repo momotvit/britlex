@@ -20,6 +20,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--primery-bg);
     color: var(--primery-text-color);
+    padding-top: 180px;
+
 }
 
 ul {
@@ -38,9 +40,23 @@ ul {
     margin: 0;
 }
 
+.title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.5;
+    color: var(--secondary-title-black);
+}
+
 .main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     padding-top: 55px;
     padding-bottom: 55px;
+    background-color: tomato;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -121,12 +137,16 @@ ul {
     min-height: 66px;
     min-width: 308px;
     background-color: var(--primery-bg);
+    transition-duration: 1000ms;
+
 
 }
 
 .hdr-btn:hover,
 .hdr-btn:focus {
-    background-color: var(--primery-text-color)
+    background-color: yellowgreen;
+    transform: rotate(-4deg);
+
 }
 
 /* HERO SECTION */
@@ -190,6 +210,43 @@ ul {
 }
 
 /* SKILLS SECTION */
+.skills-box {
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.skills-title {
+    text-align: center;
+    margin: 0 auto 60px auto;
+}
+
+.card1 {
+    max-width: 426px;
+}
+
+.card1>.card-dscr {
+    max-width: 347px;
+    margin-left: 18px;
+    margin-right: 61px;
+
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.5;
+    color: var(--title-black-color);
+    margin-bottom: 20px;
+}
+
+.card-dscr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
 .dtls {
     font-weight: 500;
     color: var(--primery-bg);
