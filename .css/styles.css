@@ -47,18 +47,6 @@ ul {
     color: var(--secondary-title-black);
 }
 
-.main-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding-top: 55px;
-    padding-bottom: 55px;
-    background-color: tomato;
-    margin-left: auto;
-    margin-right: auto;
-
-}
 
 .container {
     width: 1338px;
@@ -67,6 +55,20 @@ ul {
 }
 
 /* HEADER SECTION */
+.main-header {
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    background-color: tomato;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+
+}
+
 .header-box {
     display: flex;
     justify-content: space-between;
@@ -210,6 +212,7 @@ ul {
 }
 
 /* SKILLS SECTION */
+
 .skills-box {
     margin: 0 auto;
     padding-top: 90px;
@@ -221,23 +224,141 @@ ul {
     margin: 0 auto 60px auto;
 }
 
+.skills-positioning {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .card1 {
+
     max-width: 426px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: var(--skills-bg);
+    outline: 2px solid orange;
+}
+
+.card1::before {
+    content: '';
+    display: block;
+    background-image: url(../images/Shared\ goals-bro1-use.svg);
+    width: 390px;
+    height: 390px;
+    margin: 32px 18px 24px 18px;
 }
 
 .card1>.card-dscr {
-    max-width: 347px;
     margin-left: 18px;
     margin-right: 61px;
+}
 
+.dscr {
+    margin: 0 61px 24px 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+.card1>.details {
+    margin-bottom: 154px;
+    margin-left: 18px;
 }
 
 .card-title {
     font-weight: 600;
-    font-size: 48px;
+    font-size: 30px;
     line-height: 1.5;
-    color: var(--title-black-color);
+    color: var(--secondary-title-black);
     margin-bottom: 20px;
+    margin-left: 18px;
+}
+
+.card2 {
+
+    max-width: 426px;
+    max-height: 579px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: var(--skills-bg);
+    outline: 2px solid orange;
+}
+
+.card2>.card-dscr {
+    margin-left: 18px;
+    margin-right: 68px;
+}
+
+.card2>.details {
+    margin-bottom: 32px;
+    margin-left: 18px;
+}
+
+.card2::before {
+    content: '';
+    display: block;
+    background-image: url(../images/Typewriter-bro2-use.svg);
+    width: 390px;
+    height: 264px;
+    margin: 32px 18px 24px 18px;
+}
+
+.card3 {
+
+    max-width: 426px;
+    max-height: 579px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: var(--skills-bg);
+    outline: 2px solid orange;
+}
+
+.card3>.card-dscr {
+    margin-left: 18px;
+    margin-right: 49px;
+}
+
+.card3>.details {
+    margin-bottom: 32px;
+    margin-left: 18px;
+}
+
+.card3::before {
+    content: '';
+    display: block;
+    background-image: url(../images/House\ bookshelves-bro3-use.svg);
+    width: 390px;
+    height: 264px;
+    margin: 32px 18px 24px 18px;
+}
+
+.card4 {
+    display: flex;
+    max-width: 882px;
+    outline: 2px solid orange;
+    background-color: var(--skills-bg);
+    border-radius: 10px;
+}
+
+.card4-box1>.card-dscr {
+    margin-left: 18px;
+    margin-right: 114px;
+}
+
+.card4-box1>.details {
+    margin-bottom: 79px;
+    margin-left: 18px;
+}
+
+.card4-box1>.card-title {
+    margin-top: 32px;
+}
+
+.card-pic {
+    display: block;
+    margin: 32px 18px 32px 0;
+    ;
 }
 
 .card-dscr {
@@ -252,7 +373,7 @@ ul {
     color: var(--primery-bg);
 }
 
-details {
+.details {
     font-weight: 400;
     Font-size: 20px;
     Line-height: 1.8;
