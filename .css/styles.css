@@ -56,7 +56,7 @@ ul {
 
 /* HEADER SECTION */
 .main-header {
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -224,9 +224,14 @@ ul {
     margin: 0 auto 60px auto;
 }
 
-.skills-positioning {
+.cards-wrap {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skills-positioning {
+    display: flex;
     gap: 30px;
 }
 
@@ -278,7 +283,7 @@ ul {
 .card2 {
 
     max-width: 426px;
-    max-height: 579px;
+    min-height: 579px;
     display: inline-block;
     border-radius: 10px;
     background-color: var(--skills-bg);
@@ -307,7 +312,7 @@ ul {
 .card3 {
 
     max-width: 426px;
-    max-height: 579px;
+    min-height: 579px;
     display: inline-block;
     border-radius: 10px;
     background-color: var(--skills-bg);
