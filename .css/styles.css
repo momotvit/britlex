@@ -405,3 +405,8 @@ details>p {
     margin: 0;
     box-shadow: 1px 4px 6px black, 0px 4px 4px black, 0px 1px 1px;
 }
+
+.aboutus {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
